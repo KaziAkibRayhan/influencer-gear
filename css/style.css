@@ -57,7 +57,6 @@ body {
     align-items: center;
     justify-items: center;
     height: 110px;
-    border: 2px solid gainsboro;
 }
 
 /* Popular Collection  */
@@ -69,11 +68,17 @@ body {
     margin-bottom: 40px;
 }
 
+.card-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+}
+
 .card-item {
     width: 329px;
     min-height: 480px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px #00000026;
     border-radius: 5px;
     padding: 10px;
 }
@@ -124,8 +129,18 @@ body {
         width: 100%;
     }
 
+    .prebook-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
     .ecommerce-logos {
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-items {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
 }
