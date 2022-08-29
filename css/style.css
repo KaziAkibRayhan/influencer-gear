@@ -8,6 +8,22 @@ body {
 
 }
 
+/* nav Section */
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+
 /* Influence Header */
 .container {
     width: 90%;
@@ -109,6 +125,23 @@ body {
     color: #5E6366;
     margin-left: 15px;
 }
+
+.footer-section {
+    width: 100%;
+    height: 240px;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
 
 /* Mobile Devices View */
 @media only screen and (max-width: 688px) {
