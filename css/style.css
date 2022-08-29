@@ -1,0 +1,131 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common styles and Utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+
+}
+
+/* Influence Header */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.influence-items {
+    display: flex;
+}
+
+.influence-item {
+    width: 50%;
+}
+
+.influence-item h1 {
+    margin-bottom: 10px;
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+.influence-item p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+}
+
+.prebook-btn {
+    text-decoration: none;
+    background: #E02C6D;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 41px;
+}
+
+.influence-item img {
+    width: 100%;
+}
+
+/* ecommerce platform */
+.ecommerce-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 110px;
+    border: 2px solid gainsboro;
+}
+
+/* Popular Collection  */
+.section-title {
+    text-align: center;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.card-item {
+    width: 329px;
+    min-height: 480px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.card-title {
+    color: #18191F;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.card-price {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000de;
+}
+
+.card-ratings {
+    color: #FB8200;
+}
+
+.card-ratings span {
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+    margin-left: 15px;
+}
+
+/* Mobile Devices View */
+@media only screen and (max-width: 688px) {
+    .influence-items {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .influence-item h1 {
+        font-size: 28px;
+    }
+
+    .influence-item p {
+        font-size: 14px;
+    }
+
+    .influence-item img {
+        width: 100%;
+    }
+
+    .ecommerce-logos {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
